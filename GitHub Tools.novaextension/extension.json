@@ -1,0 +1,40 @@
+{
+    "identifier": "org.github-tools",
+    "name": "GitHub Tools",
+    "organization": "MyOrganization",
+    "description": "Lorem ipsum, dolor sit amet.",
+    "version": "1.0",
+    "categories": ["commands"],
+    
+    "main": "main.js",
+    
+    "activationEvents": [
+        "onLanguage:html"
+    ],
+    
+    "entitlements": {
+        "process": true
+    },
+    
+    "commands": {
+        "extensions": [
+            {
+                "title": "Open URL",
+                "command": "github-tools.openURL"
+            },
+            {
+                "title": "Run External Tool",
+                "command": "github-tools.runExternalTool"
+            }
+        ]
+    },
+    
+    "config": [
+        {
+            "key": "github-tools.foobar",
+            "title": "Foo the bar",
+            "type": "boolean",
+            "default": false
+        }
+    ]
+}
